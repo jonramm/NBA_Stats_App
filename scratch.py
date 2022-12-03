@@ -19,7 +19,7 @@ games_data = json.loads(games.get_json())
 str_arr = []
 for game in games_data["scoreboard"]["games"]:
     data = {
-        "home": game["awayTeam"]["teamName"],
+        "home": game["homeTeam"]["teamName"],
         "away": game["awayTeam"]["teamName"],
         "home_score": game["awayTeam"]["score"],
         "away_score": game["homeTeam"]["score"]
